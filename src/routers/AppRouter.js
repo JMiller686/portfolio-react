@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import ContactPage from '../components/ContactPage';
 import Header from '../components/Header';
 import HomePage from '../components/HomePage';
 import PortFolioPage from '../components/PortfolioPage';
 import PortFolioItem from '../components/PortfolioItem';
-import ContactPage from '../components/ContactPage';
 import NotFound from '../components/NotFound';
 
 const AppRouter = () => {
