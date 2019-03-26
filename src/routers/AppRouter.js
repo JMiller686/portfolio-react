@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from '../components/Header';
 import HomePage from '../components/HomePage';
 import PortFolioPage from '../components/PortfolioPage';
+import PortFolioItem from '../components/PortfolioItem';
 import ContactPage from '../components/ContactPage';
 import NotFound from '../components/NotFound';
 
@@ -13,7 +14,8 @@ const AppRouter = () => {
                 <Header />
                 <Switch>
                     <Route path="/" component={ HomePage } exact={true} />
-                    <Route path="/portfolio" component={ PortFolioPage } />
+                    <Route path="/portfolio" component={ PortFolioPage } exact={true} />
+                    <Route path="/portfolio/:id" component={ PortFolioItem } />
                     <Route path="/contact" component={ ContactPage } /> 
                     <Route component={ NotFound }/>
                 </Switch>
